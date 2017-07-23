@@ -1,0 +1,28 @@
+<% include ../pages/header %>
+
+
+
+<div class="ui comments">
+
+
+	<div class="comment">
+		<a class="avatar" href="/message/<%= message.id %>">
+			<img src="http://xn--wegmller-95a.es/Images/Logos/Playmobil_logo.jpg">
+		</a>
+		<div class="content">
+			<div class="metadata">
+				<div class="date">
+					<%= message.date.fromNow() %>
+				</div>
+			</div>
+			<div class="text">
+				<%= message.content %>
+			</div>
+		</div>
+	</div>	
+
+	
+
+</div>
+
+<% include ../pages/footer %>
